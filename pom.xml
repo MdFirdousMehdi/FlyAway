@@ -34,7 +34,7 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.13</version>
+			<version>8.0.33</version>
 		</dependency>
 		<dependency>
 			<groupId>org.hibernate</groupId>
@@ -83,6 +83,14 @@
 			<version>2.2</version>
 			<scope>provided</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api -->
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>3.0.1</version>
+    <scope>provided</scope>
+</dependency>
+
   </dependencies>
 
   <build>

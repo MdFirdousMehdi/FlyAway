@@ -8,8 +8,55 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>FLYAWAY.COM</title>
+
+<style>
+body {
+  overflow: hidden;
+  position: relative;
+}
+.back-bg {
+  opacity: 0.6;
+  position:absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+.container{
+	position: relative;
+}
+#details {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#details td, #details th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#details tr:nth-child(even){background-color: #f2f2f2;}
+
+#details tr:hover {background-color: #F0F8FF;}
+
+#details th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #6699CC;
+  color: white;
+}
+</style>
 </head>
 <body>
+<div class="content">
+<img
+    class="back-bg"
+    src="https://c4.wallpaperflare.com/wallpaper/105/547/579/anime-original-airplane-cloud-wallpaper-preview.jpg"
+    alt=""
+  >
+  <div class="container">
 	<h1 align="center">Flight Management</h1>
 	<h2 align="center">
 		<a href="add">Add Flight</a>
@@ -19,7 +66,7 @@
 		<a href="HomePage.jsp">Logout</a>
 	</h2>
 	<div align="center">
-        <table border="1">
+        <table border="1" id="details">
             <caption>
             	Flight Details 
             </caption>
@@ -52,5 +99,7 @@
             </c:forEach>
         </table>
     </div> 
+    </div>
+   </div>
 </body>
 </html>
